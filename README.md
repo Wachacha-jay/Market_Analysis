@@ -49,7 +49,9 @@ The dataset used is [dataset](Data/Cleaned_data.csv)
 ### **Analysis & Insights:**
 
 Detailed analysis and tables[python file](<python _files/case_eda.ipynb>)
+
 ![category and business table](Assets/group1.png)
+
 #### **1. Data Overview **
 - The dataset includes anonymized categories, businesses, and their corresponding `Total_Quantity` and `Total_Value`.
 - `Category-76`, `Category-100`, and `Category-75` dominate the dataset.
@@ -58,6 +60,7 @@ Detailed analysis and tables[python file](<python _files/case_eda.ipynb>)
 - There is a mix of high-volume and low-volume businesses.
 
 ![barchat](Assets/group1plt.png)
+
 #### **2. Bar chart of best perfoming categories among the businesses**
 - **Key Observations:**
   - `Category-100` has one dominant business (`Business-978e`) contributing significantly to its total quantity.
@@ -66,7 +69,8 @@ Detailed analysis and tables[python file](<python _files/case_eda.ipynb>)
   - There are some small contributors with significantly lower sales quantities.
 
 ![stacked bar chart](Assets/group1plt2.png)
-#### **3. Stacked Bar Chart for top categories**
+
+3. **Stacked Bar Chart for top categories**
 - **Key Observations:**
   - `Category-75` has the highest total quantity, with many businesses contributing.
   - `Category-100` is driven by a single dominant business.
@@ -76,23 +80,29 @@ Based on the provided data, we can analyze the **high variability categories** a
 
 
 ![high variability](Assets/highvc.png)
+
 4. **High Variability Categories**:
    - The listed categories exhibit significant fluctuations in sales performance. Categories such as **Category-75**, **Category-76**, **Category-120**, **Category-100**, **Category-77**, **Category-119**, and **Category-91** may experience irregular sales patterns, indicating potential issues or opportunities.
    - High variability can stem from factors like seasonal demand, marketing effectiveness, competition, or changes in consumer preferences.
 
 ![](Assets/topc.png)
+
 5. **Top Category**:
    - **Category-75** is identified as the top category with a total value of **KES 544,658,700**. This indicates strong sales performance and suggests that it is a key driver of revenue.
 To analyze the provided data of anonymized products, we will look at both tables to derive insights and make recommendations.
 
 ### Products Analysis
+
 Detailed analysis and tables[python file](<python _files/Business and product exploration.ipynb>)
+
 ![bottom products](Assets/bottom10_products.png)
+
 1. **10 Low Performing Products throught the Year**:
    - Consists of binary values (0 or 1) indicating whether a product was sold in a given month. 
    - Most products appear to have limited sales activity, as many entries are zero, indicating no sales for those months.
 
 ![top 10](Assets/top10_products.png)
+
 2. **1O High Performing Products throught the Year**:
    - Contains the actual sales figures (quantities) for multiple products over the same time period.
    - The data shows varying sales numbers for different products across the months, with certain products consistently performing better than others.
@@ -112,14 +122,18 @@ Based on the provided information and visualizations regarding businesses with d
 ### Businesses Analysis
 
 ![DECLINE](Assets/declinealeart.png)
+
 ![decline](Assets/declinb.png)
+
 Details and tables[Declining bussines](<python _files/Business and product exploration.ipynb>)
+
 1. **Declining Purchase Frequency Among businesses**:
    - The line chart indicates several businesses (e.g., Business-0078, Business-0018, etc.) with noticeable declines in purchase frequency over the months.
    - Some businesses show erratic patterns in their purchase frequency, suggesting inconsistent buying behavior or possible dissatisfaction.
    - The chart shows businesses that have declined their purchases in the past three months raising an attention
 
 ![pv-drop](Assets/dropb_pv.png)
+
 2. **Businesses with Significant Drops**:
    - The tabular data highlights businesses experiencing substantial drops in purchase value, including:
      - Business-cb1f: -$2,613,520
@@ -129,8 +143,11 @@ Details and tables[Declining bussines](<python _files/Business and product explo
    - Through this we can be able to deduce the drop in purchase values in various businesses and follow up on them
 
 ![high](Assets/highvalue.png)
+
 ![low](<Assets/low value.png>)
+
 ![medium](Assets/mediumvalue.png)
+
 3. **Value Segmentation**:
    - The businesses are categorized by value segments (High, Medium, Low). Some high-value businesses are showing declining purchase frequency, which could have a significant impact on overall revenue.
 
@@ -140,29 +157,34 @@ Details and tables[Declining bussines](<python _files/Business and product explo
 
 2. **Potential Reasons for Decline**:
    - Possible reasons for the declining purchase frequency may include:
-     - **Dissatisfaction with Products/Services**: If businesses feel that their needs are not being met, they may reduce their purchases.
-     - **Competitive Offers**: Competitors may offer better pricing, products, or services, prompting customers to switch.
-     - **Budget Cuts**: Economic factors may lead businesses to cut back on spending.
+   - **Dissatisfaction with Products/Services**: If businesses feel that their needs are not being met, they may reduce their purchases.
+   - **Competitive Offers**: Competitors may offer better pricing, products, or services, prompting customers to switch.
+   - **Budget Cuts**: Economic factors may lead businesses to cut back on spending.
 
 3. **Segmentation Insights**:
    - High-value customers are particularly concerning because their departure would have a disproportionate impact on revenue. 
-   - For the medium businesses we can also do a deep research , to improve on their purchases .
+   - For the medium businesses we can also do a deep research, to improve on their purchases.
 
 
 ### Data Overview
+
 Detailed analysis and tables[pythonfile](<Data/Case Study Data.csv>)
+
 ![anomalies](Assets/anomalies.png)
+
 1. **Anomalies and Moving Average**:
    - The table shows **Total Value**, **Moving Average**, **Percentage Change**, and **Anomaly Status**.
    - The presence of anomalies indicates unusual spikes or drops in sales, while the moving average helps smooth out fluctuations for better trend analysis.
    - The table indicates that the anomalies are normal, We can use other creterias and features to look more into this area
 
 ![corr](Assets/corr.png)
+
 2. **Scatter Plot**:
    - The scatter plot illustrates the relationship between **Quantity** and **Total Value**, with a correlation coefficient of approximately **0.83**, indicating a strong positive correlation.
    - Higher quantities generally lead to higher total values, suggesting that increased sales volume is beneficial for revenue.
 
 ![values and quantities](Assets/vqplts.png)
+
 3. **Monthly Sales Trends**:
    - The line graphs illustrate trends in **Total Value** and **Quantity Sold** over the months.
    - The sales value and quantity trends show fluctuations, indicating potential seasonality or the impact of specific events or promotions.
@@ -184,8 +206,10 @@ Detailed analysis and tables[pythonfile](<Data/Case Study Data.csv>)
 
 ### Location Analysis
 Based on the analysis of sales data by location and business, here are some insights and recommendations:
-Top 20 locations with the highest business count
+Top 20 locations with the highest business count.
+
 ![businesscount](Assets/locations_businessno.png)
+
  **Underperforming and Overperforming Locations**:
   Locations such as **Location-689f** has the highest number of businesses at **43,890** while **Location-d18a** with total number  of business at **2,825** indicate potential issues, such as lack of market penetration or poor product offerings.
 
@@ -195,12 +219,14 @@ Top 20 locations with the highest business count
    - The bar chart demonstrates a highly skewed distribution of total sales across locations. The top locations, such as **Location-689f** and **Location-3e32**, generate significantly higher sales compared to others, indicating a concentration of revenue in a few areas.
 
 ![toploc](Assets/top20_locations.png)
+
 2. **Top Locations with higher sales**:
    - **Location-689f** stands out with total sales of **KSh 264,213,790**, which is remarkably higher than the second location, **Location-3e32**, at **KSh 202,121,411**. This suggests that Location-689f is a key revenue driver.
    - **Focus on High-Performing Locations**: Invest resources in **Location-689f** and **Location-3e32** to maintain and grow market share. Strategies could include enhanced marketing efforts, customer loyalty programs, and expanding product offerings to capitalize on existing sales momentum.
    - **Sales Quantity**:The **Quantity** column associated with the locations indicates that higher sales do not always correlate with higher quantities sold. For instance, **Location-689f** has a high total sales figure but may not have the highest quantity sold, which might indicate a premium pricing strategy.
 
 ![tobusandloc](Assets/topbandlo.png)
+
 1. **Business Performance**:
    - An examination of the businesses shows that **Business-978e** in **Location-689f** has the highest sales of **KSh 2,807,358**, suggesting that certain businesses are performing significantly better within high-revenue locations.
    - The bar chart for **Total Sales by Business** reveals that **Business-978e** has the highest sales at **KSh 2,807,358**, significantly outperforming others. This business is a key contributor to revenue in the selected locations.
@@ -209,11 +235,13 @@ Top 20 locations with the highest business count
    - **Strategic Pricing Models**: Evaluate pricing strategies across businesses and products. For example, consider whether a premium pricing model can be applied to more products based on the success observed with **Business-978e**.
 
 ![tob](Assets/topbusineslocations.png)
+
 2. **Sales Quantity vs. Unit Price**:
    - The data for businesses indicates variations in sales quantities and unit prices. For instance, **Business-606e** has a relatively low unit price but still generates substantial sales, suggesting high sales volume. This could indicate a successful low-cost strategy or a popular product line.
    - Conversely, **Business-978e** has a higher unit price, which correlates with its high total sales, indicating effective premium positioning.
 
 ![barp](Assets/TOPLOCBAR.png)
+
 1. **Total Sales by Product**:
    - The **Total Sales by Product** chart shows a strong concentration of sales in specific products. **Product-6069** leads with total sales of **KSh 2,564,210**, indicating it is a best-seller.
    - Other high-performing products include **Product-875** and **Product-6809**, suggesting that certain products drive much of the revenue.
@@ -380,6 +408,7 @@ A dashboard was created to visualize key insights, including:
 
 
 **[![Screenshot or Link to the Dashboard](Assets/my_dashboard.png)]**
+
 Link to my powerBI Dashboard[Dashboard](<python _files/BUSINESS ANALYSIS.pbit>)
 
 ## Conclusion
